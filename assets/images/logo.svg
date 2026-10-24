@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" fill="none">
+  <defs>
+    <linearGradient id="emblemGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Emblem Icon Box -->
+  <g transform="translate(10, 10)">
+    <rect width="60" height="60" rx="12" fill="url(#emblemGrad)" stroke="#d97706" stroke-width="2.5"/>
+    <!-- Hazard diagonal stripes bottom -->
+    <path d="M6 50 L14 58 H22 L14 50 Z" fill="#f59e0b" opacity="0.9"/>
+    <path d="M26 50 L18 58 H26 L34 50 Z" fill="#f59e0b" opacity="0.9"/>
+    <path d="M38 50 L30 58 H38 L46 50 Z" fill="#f59e0b" opacity="0.9"/>
+    <!-- Tow Truck Silhouette -->
+    <path d="M14 42 V30 H26 L34 36 H44 V42 Z" fill="#f8fafc"/>
+    <circle cx="20" cy="44" r="5" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="38" cy="44" r="5" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+    <!-- Hydraulic Boom Crane -->
+    <line x1="30" y1="30" x2="48" y2="20" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="48" cy="20" r="2.5" fill="#fbbf24"/>
+    <line x1="48" y1="20" x2="48" y2="28" stroke="#f8fafc" stroke-width="1.8"/>
+  </g>
+
+  <!-- Brand Typography -->
+  <text x="82" y="38" font-family="'Cairo', system-ui, sans-serif" font-weight="900" font-size="26" fill="#0f172a">
+    ونش <tspan fill="#d97706">مجدي</tspan>
+  </text>
+  <text x="82" y="58" font-family="'Cairo', system-ui, sans-serif" font-weight="700" font-size="13" fill="#64748b">
+    لإنقاذ ونقل السيارات • 24 ساعة
+  </text>
+</svg>

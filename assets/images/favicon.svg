@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="favBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#favBg)" stroke="#d97706" stroke-width="3"/>
+  <!-- Gold Tow Truck Hook & Boom -->
+  <path d="M14 46 V34 H26 L34 40 H50 V46 Z" fill="#ffffff"/>
+  <circle cx="22" cy="48" r="6" fill="#0f172a" stroke="#f59e0b" stroke-width="2.5"/>
+  <circle cx="42" cy="48" r="6" fill="#0f172a" stroke="#f59e0b" stroke-width="2.5"/>
+  <line x1="28" y1="34" x2="48" y2="20" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="48" cy="20" r="3" fill="#fbbf24"/>
+  <line x1="48" y1="20" x2="48" y2="30" stroke="#ffffff" stroke-width="2.5"/>
+</svg>
