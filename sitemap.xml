@@ -3,63 +3,63 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <!-- Homepage -->
   <url>
-    <loc>https://magdytowing.com/</loc>
+    <loc>https://alharbitowing.com/</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <!-- Services Page -->
   <url>
-    <loc>https://magdytowing.com/services.html</loc>
+    <loc>https://alharbitowing.com/services.html</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <!-- Coverage Areas Page -->
   <url>
-    <loc>https://magdytowing.com/areas.html</loc>
+    <loc>https://alharbitowing.com/areas.html</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <!-- Pricing Page -->
   <url>
-    <loc>https://magdytowing.com/pricing.html</loc>
+    <loc>https://alharbitowing.com/pricing.html</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <!-- Contact Page -->
   <url>
-    <loc>https://magdytowing.com/contact.html</loc>
+    <loc>https://alharbitowing.com/contact.html</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <!-- About Page -->
   <url>
-    <loc>https://magdytowing.com/about.html</loc>
+    <loc>https://alharbitowing.com/about.html</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <!-- Partner Page -->
   <url>
-    <loc>https://magdytowing.com/partner.html</loc>
+    <loc>https://alharbitowing.com/partner.html</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <!-- Blog Page -->
   <url>
-    <loc>https://magdytowing.com/blog.html</loc>
+    <loc>https://alharbitowing.com/blog.html</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <!-- Privacy Policy -->
   <url>
-    <loc>https://magdytowing.com/privacy-policy.html</loc>
+    <loc>https://alharbitowing.com/privacy-policy.html</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>

@@ -1,5 +1,5 @@
 /**
- * ونش مجدي لإنقاذ وسحب السيارات (Magdy Towing)
+ * ونش الحربي لإنقاذ وسحب السيارات (Al Harbi Towing)
  * Master Client-Side JavaScript
  */
 

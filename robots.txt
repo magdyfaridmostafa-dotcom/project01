@@ -5,4 +5,4 @@ Allow: /
 Disallow: /thank-you.html
 
 # Sitemap reference
-Sitemap: https://magdytowing.com/sitemap.xml
+Sitemap: https://alharbitowing.com/sitemap.xml
