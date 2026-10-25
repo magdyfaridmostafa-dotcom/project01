@@ -38,13 +38,14 @@
   <link rel="apple-touch-icon" href="assets/images/logo-badge.png">
   <meta name="theme-color" content="#0b1120">
 
-  <!-- Hero Preload & Non-blocking Fonts -->
-  <link rel="preload" as="image" href="assets/images/real-highway-sunset.jpg" fetchpriority="high">
+  <!-- Hero Preload & High Performance Non-blocking Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap"></noscript>
+  <link rel="preload" href="https://fonts.gstatic.com/s/cairo/v31/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS4J0.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="assets/images/real-highway-sunset.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=optional">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=optional" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=optional"></noscript>
   <link rel="stylesheet" href="assets/css/style.css">
 
   <!-- Structured Data (JSON-LD) High Intent SEO -->
@@ -294,7 +295,10 @@
           </div>
 
           <div class="hero-media-card">
-            <img src="assets/images/real-highway-sunset.jpg" alt="سطحة هيدروليكية ونش الحربي لإنقاذ وسحب السيارات على الطرق والمحاور السريعة" width="580" height="380" fetchpriority="high" decoding="async">
+            <picture>
+              <source srcset="assets/images/real-highway-sunset.webp" type="image/webp">
+              <img src="assets/images/real-highway-sunset.jpg" alt="سطحة هيدروليكية ونش الحربي لإنقاذ وسحب السيارات على الطرق والمحاور السريعة" width="580" height="380" fetchpriority="high" decoding="async">
+            </picture>
             <div class="hero-media-badge">
               <div>
                 <strong style="color: #fbbf24; font-size: 1.05rem; display: block;">أسطول ونش الحربي الميداني</strong>
@@ -324,7 +328,7 @@
           <!-- Video 1 -->
           <div class="video-card">
             <div class="video-wrapper">
-              <video controls playsinline preload="none" poster="assets/images/video1-poster.jpg" width="480" height="850">
+              <video controls playsinline preload="none" poster="assets/images/video1-poster.webp" width="480" height="850">
                 <source src="assets/videos/video-rescue-1.mp4" type="video/mp4">
                 متصفحك لا يدعم تشغيل الفيديو.
               </video>
@@ -341,7 +345,7 @@
           <!-- Video 2 -->
           <div class="video-card">
             <div class="video-wrapper">
-              <video controls playsinline preload="none" poster="assets/images/video2-poster.jpg" width="480" height="850">
+              <video controls playsinline preload="none" poster="assets/images/video2-poster.webp" width="480" height="850">
                 <source src="assets/videos/video-rescue-2.mp4" type="video/mp4">
                 متصفحك لا يدعم تشغيل الفيديو.
               </video>
@@ -467,7 +471,7 @@
           <div class="corridor-card">
             <div class="corridor-header">
               <div>
-                <span class="corridor-status" style="background: rgba(245, 158, 11, 0.15); color: #d97706; font-weight: 800;">📍 المركز الرئيسي والتمركز</span>
+                <span class="corridor-status" style="background: rgba(245, 158, 11, 0.15); color: #92400e; font-weight: 800;">📍 المركز الرئيسي والتمركز</span>
                 <h3 class="corridor-name">1. مدينة الشروق ومداخلها (المركز الرئيسي)</h3>
               </div>
               <span class="corridor-icon">⭐</span>
@@ -625,7 +629,10 @@
           <!-- Truck 1 -->
           <div class="fleet-card">
             <div class="fleet-img-wrap">
-              <img src="assets/images/real-mechanism.jpg" alt="سطحة هيدروليكية مجهزة بأحدث آليات السحب - ونش الحربي" width="800" height="450" loading="lazy" decoding="async">
+              <picture>
+                <source srcset="assets/images/real-mechanism.webp" type="image/webp">
+                <img src="assets/images/real-mechanism.jpg" alt="سطحة هيدروليكية مجهزة بأحدث آليات السحب - ونش الحربي" width="800" height="450" loading="lazy" decoding="async">
+              </picture>
             </div>
             <div class="fleet-card-body">
               <h3 class="fleet-card-title">سطحة هيدروليكية كاملة النزول</h3>
@@ -637,7 +644,10 @@
           <!-- Truck 2 -->
           <div class="fleet-card">
             <div class="fleet-img-wrap">
-              <img src="assets/images/real-industrial-gate.jpg" alt="ونش إنقاذ وسحب في العاشر من رمضان والمناطق الصناعية - ونش الحربي" width="800" height="450" loading="lazy" decoding="async">
+              <picture>
+                <source srcset="assets/images/real-industrial-gate.webp" type="image/webp">
+                <img src="assets/images/real-industrial-gate.jpg" alt="ونش إنقاذ وسحب في العاشر من رمضان والمناطق الصناعية - ونش الحربي" width="800" height="450" loading="lazy" decoding="async">
+              </picture>
             </div>
             <div class="fleet-card-body">
               <h3 class="fleet-card-title">ونش استعادة وسحب المصانع والشركات</h3>
@@ -649,7 +659,10 @@
           <!-- Truck 3 -->
           <div class="fleet-card">
             <div class="fleet-img-wrap">
-              <img src="assets/images/real-residential-truck.jpg" alt="ونش طوارئ لإنقاذ وسحب السيارات بالمدن الجديدة - ونش الحربي" width="800" height="450" loading="lazy" decoding="async">
+              <picture>
+                <source srcset="assets/images/real-residential-truck.webp" type="image/webp">
+                <img src="assets/images/real-residential-truck.jpg" alt="ونش طوارئ لإنقاذ وسحب السيارات بالمدن الجديدة - ونش الحربي" width="800" height="450" loading="lazy" decoding="async">
+              </picture>
             </div>
             <div class="fleet-card-body">
               <h3 class="fleet-card-title">ونش طوارئ وسحب المدن والمحاور</h3>
