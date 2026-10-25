@@ -53,7 +53,7 @@
 المشروع مبني بتقنيات الويب القياسية الخفيفة (HTML5, CSS3, Modern Vanilla JS) بدون أي تبعيات معقدة، ويعمل مباشرة عبر أي متصفح ويب:
 1. قم بتنزيل أو استنساخ المستودع:
    ```bash
-   git clone https://github.com/magdyfaridmostafa-dotcom/project-1-.git
+   git clone https://github.com/magdyfaridmostafa-dotcom/project01.git
    ```
 2. افتح ملف `index.html` في متصفحك مباشرة.
 
