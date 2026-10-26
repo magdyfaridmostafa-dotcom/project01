@@ -136,3 +136,24 @@
     });
   });
 })();
+
+// Google Ads Click-to-Call Conversion Tracking Fallback
+if (typeof window.gtag_report_conversion !== 'function') {
+  window.gtag_report_conversion = function(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    if (typeof gtag === 'function') {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18536608469',
+        'event_callback': callback
+      });
+      setTimeout(callback, 500);
+    } else {
+      callback();
+    }
+    return false;
+  };
+}
