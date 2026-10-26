@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18536608469"></script>
+  <!-- Google Ads Click-to-Call Conversion Event Snippet -->
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'AW-18536608469');
-
-    function gtag_report_conversion(url) {
+    window.gtag_report_conversion = function(url) {
+      console.log('gtag_report_conversion triggered for:', url);
       var callback = function () {
-        if (typeof(url) != 'undefined') {
+        if (typeof(url) != 'undefined' && url) {
           window.location = url;
         }
       };
@@ -26,7 +20,19 @@
         callback();
       }
       return false;
-    }
+    };
+    var gtag_report_conversion = window.gtag_report_conversion;
+    console.log('gtag_report_conversion is loaded and ready. typeof:', typeof window.gtag_report_conversion);
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18536608469"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18536608469');
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">

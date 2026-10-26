@@ -137,23 +137,23 @@
   });
 })();
 
-// Google Ads Click-to-Call Conversion Tracking Fallback
-if (typeof window.gtag_report_conversion !== 'function') {
-  window.gtag_report_conversion = function(url) {
-    var callback = function () {
-      if (typeof(url) != 'undefined') {
-        window.location = url;
-      }
-    };
-    if (typeof gtag === 'function') {
-      gtag('event', 'conversion', {
-        'send_to': 'AW-18536608469',
-        'event_callback': callback
-      });
-      setTimeout(callback, 500);
-    } else {
-      callback();
+// Google Ads Click-to-Call Conversion Tracking
+window.gtag_report_conversion = window.gtag_report_conversion || function(url) {
+  console.log('gtag_report_conversion triggered for:', url);
+  var callback = function () {
+    if (typeof(url) != 'undefined' && url) {
+      window.location = url;
     }
-    return false;
   };
-}
+  if (typeof gtag === 'function') {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18536608469',
+      'event_callback': callback
+    });
+    setTimeout(callback, 500);
+  } else {
+    callback();
+  }
+  return false;
+};
+var gtag_report_conversion = window.gtag_report_conversion;
