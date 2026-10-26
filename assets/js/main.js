@@ -139,21 +139,31 @@
 
 // Google Ads Click-to-Call Conversion Tracking
 window.gtag_report_conversion = window.gtag_report_conversion || function(url) {
+  var now = Date.now();
+  if (window._lastConvTime && (now - window._lastConvTime < 1500)) {
+    return true;
+  }
+  window._lastConvTime = now;
+
   console.log('gtag_report_conversion triggered for:', url);
-  var callback = function () {
-    if (typeof(url) != 'undefined' && url) {
-      window.location = url;
-    }
-  };
   if (typeof gtag === 'function') {
     gtag('event', 'conversion', {
-      'send_to': 'AW-18536608469',
-      'event_callback': callback
+      'send_to': 'AW-18536608469/Q10wCNH77qkdENXl-IZF',
+      'value': 1.0,
+      'currency': 'EGP'
     });
-    setTimeout(callback, 500);
-  } else {
-    callback();
   }
-  return false;
+
+  var isAnchor = false;
+  if (typeof window !== 'undefined' && window.event && window.event.target) {
+    var t = window.event.target;
+    if (t.tagName === 'A' || (t.closest && t.closest('a'))) {
+      isAnchor = true;
+    }
+  }
+  if (!isAnchor && url) {
+    window.location.href = url;
+  }
+  return true;
 };
 var gtag_report_conversion = window.gtag_report_conversion;
